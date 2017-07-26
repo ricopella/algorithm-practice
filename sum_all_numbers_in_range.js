@@ -15,19 +15,19 @@ function sumAll(arr) {
     let max = arr.reduce(function(a, b) {
         return Math.max(a, b);
     });
-    // empty array
+    // empty array to store all numbers including ones inbetween
     let emArray = [];
     // for through min & max, add each iterative to empty array
     for (let i = min; i <= max; i++) {
         emArray.push(i);
     }
-    // console.log(emArray);
 
+    // reduce through array to find total
     let total = emArray.reduce(function(a, b) {
         return a + b;
     });
 
-    // reduce through array to find total
+
 
     console.log(total);
     return total;
