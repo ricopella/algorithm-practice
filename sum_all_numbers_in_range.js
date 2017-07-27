@@ -27,8 +27,6 @@ function sumAll(arr) {
         return a + b;
     });
 
-
-
     console.log(total);
     return total;
 }
