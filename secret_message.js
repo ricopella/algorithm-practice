@@ -10,20 +10,8 @@ For example: text = "How are you? Eh, ok. Low or Lower? Ohhh.", if we collect al
 function findMessage(data) {
 
     // split each work into array
-    let newArr = data
-        .replace(/[^a-zA-Z]/g, '')
-        .split("");
+    return data.replace(/[^A-Z]/g, '')
 
-    if (data === "") {
-        return "";
-    } else {
-
-        let answerArr = newArr.filter((x) => x === x.toUpperCase())
-
-        return answerArr = answerArr.length >= 1
-            ? answerArr.join("")
-            : "";
-    }
 }
 
 findMessage("HELLO WORLD");
