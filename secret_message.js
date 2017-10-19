@@ -14,26 +14,15 @@ function findMessage(data) {
         .replace(/[^a-zA-Z]/g, '')
         .split("");
 
-    let answerArr = [];
-
     if (data === "") {
-        return data = "";
+        return "";
     } else {
 
-        for (let i = 0; i < newArr.length; i++) {
-            if (newArr[i] === newArr[i].toUpperCase()) {
-                answerArr.push(newArr[i]);
-            }
+        let answerArr = newArr.filter((x) => x === x.toUpperCase())
 
-        }
-        answerArr = answerArr.length >= 1
+        return answerArr = answerArr.length >= 1
             ? answerArr.join("")
             : "";
-
-        // loop through to find capital letters & add to new array
-        console.log(newArr);
-        return answerArr;
-
     }
 }
 
