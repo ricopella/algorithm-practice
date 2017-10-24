@@ -13,14 +13,9 @@ Let's look at a few examples:
 */
 
 function indexPower(array, n) {
-
-    if (array.length > n) {
-        console.log(array[n] ** n);
-        return array[n] ** n;
-    } else {
-        console.log("nope");
-        return -1
-    }
+    return array.length > n
+        ? array[n] ** n
+        : -1;
 }
 
 indexPower([
