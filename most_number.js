@@ -13,13 +13,10 @@ Think about how to work with an arbitrary number of arguments.
 
 function mostNumbers(...numbers) {
 
-    const highest = Math.max(...numbers);
-    const lowest = Math.min(...numbers);
-
     // if 0 args, return 0, else return difference
     return [...numbers].length === 0
         ? 0
-        : highest - lowest;
+        : Math.max(...numbers) - Math.min(...numbers);
 }
 
 mostNumbers(1, 2, 3) // 2
