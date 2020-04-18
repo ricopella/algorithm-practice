@@ -2,7 +2,7 @@
 
 ### Overview
 
-A respository of algorithms completed in JavaScript for practice & personal development.
+A respository of algorithms completed in JavaScript (some in Pythong) for practice & personal development.
 
 ## Resources
 
