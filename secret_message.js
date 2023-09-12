@@ -8,8 +8,6 @@ For example: text = "How are you? Eh, ok. Low or Lower? Ohhh.", if we collect al
 */
 
 function findMessage(data) {
-
-    // split each work into array
     return data.replace(/[^A-Z]/g, '')
 
 }
